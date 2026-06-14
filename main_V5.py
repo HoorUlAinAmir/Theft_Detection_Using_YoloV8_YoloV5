@@ -13,7 +13,8 @@ pygame.init()
 pygame.mixer.music.load(path_alarm)
 
 # ─── MODEL SETUP ───────────────────────────────────────────
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+# Nano ke liye change karo:
+model = torch.hub.load('ultralytics/yolov5', 'yolov5n', pretrained=True)
 cap = cv2.VideoCapture(2)
 target_classes = ['person']
 
