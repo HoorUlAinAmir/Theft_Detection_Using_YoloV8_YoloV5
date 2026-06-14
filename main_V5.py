@@ -36,7 +36,7 @@ detection_counts= []
 prev_time       = time.time()
 frame_number    = 0
 
-model_size_mb = os.path.getsize('yolov5s.pt') / (1024 * 1024)
+model_size_mb = os.path.getsize('yolov5n.pt') / (1024 * 1024)
 
 # ─── FUNCTIONS ─────────────────────────────────────────────
 def order_points(pts_list):
@@ -92,7 +92,7 @@ def print_live_stats(frame_number, fps, inf_ms, pre_ms, post_ms,
 cv2.namedWindow('Video')
 cv2.setMouseCallback('Video', draw_polygon)
 
-print("\n[START] YOLOv5s system chal raha hai...")
+print("\n[START] YOLOv5n system chal raha hai...")
 print(f"[INFO]  Model Size : {model_size_mb:.2f} MB")
 print("[INFO]  Q dabao band karne ke liye\n")
 
@@ -220,7 +220,7 @@ while True:
 mem = psutil.Process(os.getpid()).memory_info().rss / (1024 * 1024)
 
 print("\n" + "="*45)
-print("       FINAL BENCHMARK SUMMARY (YOLOv5s)")
+print("       FINAL BENCHMARK SUMMARY (YOLOv5n)")
 print("="*45)
 print(f"  Total Frames       : {len(fps_list)}")
 print(f"  Avg FPS            : {sum(fps_list)/len(fps_list):.2f}")
