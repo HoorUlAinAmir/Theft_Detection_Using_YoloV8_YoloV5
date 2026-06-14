@@ -1,4 +1,4 @@
-🔒 Theft Detection System
+##🔒 Theft Detection System
 
 Real-time intrusion detection using YOLOv8n and YOLOv5s with webcam support, 
 zone-based alerting, alarm system, and benchmarking.
