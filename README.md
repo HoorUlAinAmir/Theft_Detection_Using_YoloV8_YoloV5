@@ -1,6 +1,6 @@
 # 🔒 Theft Detection System
 
-Real-time intrusion detection using YOLOv8n and YOLOv5s with webcam support,
+Real-time intrusion detection using YOLOv8n and YOLOv5n with webcam support,
 zone-based alerting, alarm system, and performance benchmarking.
 
 ---
@@ -49,7 +49,7 @@ source venv/bin/activate
 pip install ultralytics opencv-python pygame psutil numpy
 ```
 
-**For YOLOv5s** (`main_V5.py`):
+**For YOLOv5n** (`main_V5.py`):
 ```bash
 pip install torch torchvision opencv-python pygame psutil numpy pandas
 ```
@@ -62,9 +62,9 @@ pip install torch torchvision opencv-python pygame psutil numpy pandas
 Theft_Detection/
 │
 ├── main_V8.py              # YOLOv8n — intrusion detection
-├── main_V5.py              # YOLOv5s — intrusion detection
+├── main_V5.py              # YOLOv5n — intrusion detection
 ├── yolov8n.pt              # YOLOv8n model weights
-├── yolov5s.pt              # YOLOv5s model weights
+├── yolov5n.pt              # YOLOv5n model weights
 │
 ├── Alarm/
 │   └── alarm.wav           # Alarm sound file
@@ -188,7 +188,7 @@ Exactly **3 photos** are saved automatically per session:
 
 - Model weights download **automatically** on first run
   - YOLOv8n → ~6 MB
-  - YOLOv5s → ~14 MB
+  - YOLOv5n → ~14 MB
 - `Detected Photos/` folder is created automatically — no manual setup needed
 - Alarm triggers **only** when a person enters the green zone
 - All `FutureWarning` messages in terminal are harmless — they do not affect performance
@@ -201,6 +201,6 @@ Exactly **3 photos** are saved automatically per session:
 | Model | Size | Avg FPS | Avg Inference | RAM Usage |
 |-------|------|---------|---------------|-----------|
 | YOLOv8n | 6.25 MB | ~6.2 | ~154 ms | ~796 MB |
-| YOLOv5s | 14.12 MB | ~4.0 | ~247 ms | ~946 MB |
+| YOLOv5n | 14.12 MB | ~4.0 | ~247 ms | ~946 MB |
 
 > Tested on ThinkPad T440p — CPU only, no GPU.
